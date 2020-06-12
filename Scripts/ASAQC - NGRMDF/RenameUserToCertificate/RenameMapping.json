@@ -1,0 +1,8 @@
+{
+    "\\[User\\]": "[Certificate]",
+    "\\[UserSurvey\\]": "[CertificateSurvey]",
+    "UserExternalID": "Alias",
+    "UserToken": "Thumbprint",
+    "UserType": "CertType",
+    "UserID": "CertID"
+}

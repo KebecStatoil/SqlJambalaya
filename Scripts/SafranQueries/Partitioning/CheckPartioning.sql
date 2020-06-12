@@ -1,0 +1,26 @@
+--select * from [Any2Omnia].[Jobs]
+--select * from [Any2Omnia].[Jobs_Datasets]
+
+--select
+--[safran].[GetPartitionNumber](296) [296],
+--[safran].[GetPartitionNumber](299) [299],
+--[safran].[GetPartitionNumber](300) [300]
+
+--ALTER PARTITION FUNCTION PF_SOURCE_DATABASE () 
+--MERGE RANGE (198)
+--GO
+
+--ALTER PARTITION FUNCTION PF_SOURCE_DATABASE () 
+--SPLIT RANGE (296)
+--GO
+
+/*
+ALTER PARTITION FUNCTION PF_SOURCE_DATABASE (int) AS RANGE LEFT
+FOR VALUES (198, 299, 300)
+GO
+
+CREATE PARTITION SCHEME PS_SOURCE_DATABASE
+AS PARTITION PF_SOURCE_DATABASE
+ALL TO ([PRIMARY]);
+GO
+*/

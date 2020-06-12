@@ -1,0 +1,5 @@
+/****** Object:  Index [IX_WORKORDERUSERSTATUS_AUFNRFK_UDATE]    Script Date: 06.11.2018 15:21:55 ******/
+DROP INDEX [IX_WORKORDERUSERSTATUS_AUFNRFK_UDATE] ON [dbo].[WorkOrderUserStatus]
+GO
+
+
